@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #3fd0d4;
+    --text-color: #505050;
+    --black-color: #000;
+    --white-color: #fff;
+    --top-bar-height: 46px;
+    --header-height: 225px;
+    --logo-height: 143px;
+    --nav-height: calc(var(--header-height) - var(--logo-height));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
