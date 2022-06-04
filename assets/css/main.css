@@ -1074,3 +1074,211 @@ video {
 .scroll-top.active {
     opacity: 0.8;
 }
+
+/* Modal SignIn and Register */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.4s;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    width: 350px;
+    max-width: 100%;
+    min-height: 500px;
+    background-color: var(--primary-color);
+    animation: fadeIn 0.3s linear;
+}
+
+.modal-header {
+    height: 52px;
+    display: flex;
+}
+
+.modal-header__link {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.3rem;
+    line-height: 5.2rem;
+    text-align: center;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    background-color: #3abdc1;
+}
+
+.modal-header__link.active {
+    background-color: var(--primary-color);
+}
+
+.modal-header__link--login {
+
+}
+
+.modal-header__link--register {
+
+}
+
+.modal-body {
+    position: relative;
+    padding: 30px 30px 0;
+}
+
+.modal--close {
+    position: absolute;
+    width: 28px;
+    color: var(--white-color);
+    top: 15px;
+    right: 12px;
+    font-size: 2.8rem;
+    cursor: pointer;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-title {
+    font-size: 2rem;
+    padding: 7px 0 8px;
+    line-height: 2.5rem;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.form-desc {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    margin-bottom: 23px;
+    color: var(--white-color);
+    font-weight: 400;
+}
+
+.form-control {
+    height: 52px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: none;
+    outline: none;
+    margin-bottom: 6px;
+    padding: 13px 16px 13px 36px;
+    border-radius: 3px;
+    color: var(--white-color);
+}
+
+.form-control::placeholder {
+    color: var(--white-color);
+}
+
+.form-login--remember {
+    margin-top: 16px;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+}
+
+#remember {
+    margin-right: 14px;
+    font-size: 2rem;
+}
+
+.form-login--lost-password {
+    margin-top: 3px;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-decoration: none;
+    color: #26878a;
+}
+
+.form-login--lost-password:hover {
+    color: var(--black-color);
+}
+
+.btn {
+    height: 52px;
+    border: none;
+    outline: none;
+    margin-top: 19px;
+    padding: 14px 42px;
+    color: #212121;
+    font-size: 1.3rem;
+    list-style: 1.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    background-color: var(--white-color);
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+
+.btn:hover {
+    background-color: #23a9af;
+    color: var(--white-color);
+}
+
+.socials-login-desc {
+    padding: 16px 0;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--white-color);
+}
+
+.socials-login-btns {
+    height: 52px;
+    width: calc(100% + 30px * 2);
+    display: flex;
+    margin: 0 -30px;
+}
+
+.socials-login-btn {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.3rem;
+    line-height: 5.2rem;
+    text-align: center;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+}
+
+.socials-login-btn--fb {
+    background-color: rgb(59, 89, 152);
+}
+
+.socials-login-btn--g {
+    background-color: rgb(221, 75, 57);
+}
+
+.authentication {
+    display: none;
+}
+
+.authentication.login.active {
+    display: block;
+}
+
+.authentication.register.active {
+    display: block;
+}
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+}
+
+.register {
+    padding-bottom: 30px;
+}

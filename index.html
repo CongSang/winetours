@@ -953,6 +953,65 @@
     <a class="scroll-top">
         <i class="fa-solid fa-angle-up"></i>
     </a>
+
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <a href="#" class="modal-header__link modal-header__link--login active">LOGIN</a>
+                <a href="#" class="modal-header__link modal-header__link--register">REGISTER</a>
+            </div>
+
+            <div class="modal-body ">
+                <div class="modal--close hide-on-mobile">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                
+                <div class="authentication login active">
+                    <form action="" class="form-login">
+                        <h4 class="form-title hide-on-mobile">Sign In Here</h4>
+                        <p class="form-desc hide-on-mobile">Log into your account in just a few simple steps.</p>
+    
+                        <input type="text" placeholder="Username" required class="form-control">
+                        <input type="password" placeholder="Password" required class="form-control">
+                        <span class="form-login--remember">
+                            <input type="checkbox" name="remember" id="remember">
+                            <label for="remember" class="remember-cbox-label">Remember me</label>
+                        </span>
+                        <a href="#" class="form-login--lost-password">Lost your password?</a>
+                        <button type="submit" class="btn btn-signin">
+                            SIGN IN
+                        </button>
+                    </form>
+    
+                    <div class="socials-login">
+                        <div class="socials-login-desc">
+                            Sign in with Facebook or Google+
+                        </div>
+    
+                        <div class="socials-login-btns">
+                            <a href="#" class="socials-login-btn socials-login-btn--fb">FACEBOOK</a>
+                            <a href="#" class="socials-login-btn socials-login-btn--g">GOOGLE+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="authentication register">
+                    <form action="" class="form-register">
+                        <h4 class="form-title hide-on-mobile">Register Now</h4>
+                        <p class="form-desc hide-on-mobile">Join the SetSail community today & set up a free account.</p>
+    
+                        <input type="text" placeholder="Username" required class="form-control">
+                        <input type="email" placeholder="Email" required class="form-control">
+                        <input type="password" placeholder="Password" required class="form-control">
+                        <input type="password" placeholder="Repeat Password" required class="form-control">
+                        <button type="submit" class="btn btn-register">
+                            REGISTER
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/slider.js"></script>

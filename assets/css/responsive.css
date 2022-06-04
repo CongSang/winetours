@@ -47,6 +47,10 @@
 
 /* Mobile */
 @media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
     .header__mobile-nav {
         padding: 0 40px;
     }
@@ -79,5 +83,10 @@
     .footer-contacts {
         padding-left: 40px;
         padding-right: 40px;
+    }
+
+    .modal-container {
+        min-width: 350px;
+        min-height: 303px;
     }
 }
